@@ -115,7 +115,7 @@ function Find() {
         boxShadow="md"
       >
         <Flex align="center">
-          <Image src="https://github.com/kiwirafe/transcenders/blob/main/frontend/src/assets/logo.png" alt="Logo" boxSize="40px" mr={3} />
+          <Image src="https://raw.githubusercontent.com/kiwirafe/transcenders/refs/heads/main/frontend/src/assets/logo.png" alt="Logo" boxSize="40px" mr={3} />
           <Heading size="md" fontWeight="semibold">
             ZenVoyage
           </Heading>
