@@ -1,9 +1,9 @@
-import {GoogleGenAI} from '@google/genai';
-import express from 'express';
-import cors from 'cors';
-import dotenv from 'dotenv';
-import axios from 'axios';
-import showdown from 'showdown';
+const { GoogleGenAI } = require('@google/genai');
+const express = require('express');
+const cors = require('cors');
+const dotenv = require('dotenv');
+const axios = require('axios');
+const showdown  = require('showdown');
 
 dotenv.config();
 
