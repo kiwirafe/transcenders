@@ -27,7 +27,7 @@ function Chat() {
         setRecommendation('');
 
         try {
-            const res = await axios.post('http://localhost:3001/api/chat', { query });
+            const res = await axios.post('https://transcenders-backend.vercel.app/api/chat', { query });
             setRecommendation(res.data.html);
         } catch (err) {
             console.error(err);

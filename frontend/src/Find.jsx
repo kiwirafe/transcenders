@@ -40,7 +40,7 @@ function Find() {
       ({ coords: { latitude: lat, longitude: lng } }) => {
         setCoords({ lat, lng });
         axios
-          .get(`http://localhost:3001/api/places?lat=${lat}&lng=${lng}`)
+          .get(`https://transcenders-backend.vercel.app/api/places?lat=${lat}&lng=${lng}`)
           .then((res) => {
             const all = [...res.data.restaurants, ...res.data.attractions];
             setPlaces(all);
@@ -70,7 +70,7 @@ function Find() {
   const handleFilter = async (query) => {
     setFiltering(true);
     try {
-      const res = await axios.post('http://localhost:3001/api/filter', { query });
+      const res = await axios.post('https://transcenders-backend.vercel.app/api/filter', { query });
       const { cuisine, keywords } = res.data;
       let results = [...places];
 
