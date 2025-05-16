@@ -95,6 +95,10 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Server is running...')
+})
+
 // Start server
 app.listen(process.env.PORT || 3001, () => {
   console.log(`Server running at port 3001`);
